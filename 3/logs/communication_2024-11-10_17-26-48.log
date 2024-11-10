@@ -1,0 +1,12 @@
+[2024-11-10T17:26:48.737] [T1] Transaction started - 0.0.0.0:50753
+[2024-11-10T17:26:48.752] [T1] Packet sent - Type: DATA, Seq: 0
+[2024-11-10T17:26:53.765] [T1] Packet sent - Type: DATA, Seq: 0
+[2024-11-10T17:26:56.774] [T1] Packet sent - Type: DATA, Seq: 1
+[2024-11-10T17:27:01.783] [T1] Packet sent - Type: DATA, Seq: 1
+[2024-11-10T17:27:06.798] [T1] Packet sent - Type: DATA, Seq: 1
+[2024-11-10T17:27:09.81] [T1] Packet sent - Type: DATA, Seq: 0
+[2024-11-10T17:27:12.815] [T1] Packet sent - Type: DATA, Seq: 1
+[2024-11-10T17:27:15.832] [T1] Packet sent - Type: DATA, Seq: 0
+[2024-11-10T17:27:20.838] [T1] Packet sent - Type: DATA, Seq: 0
+[2024-11-10T17:27:25.851] [T1] Packet sent - Type: DATA, Seq: 0
+[2024-11-10T17:27:28.859] [T1] Transaction completed - Client: 0.0.0.0:50753, Duration: 40122ms, Packets Sent: 10, Packets Received: 5, Average RTT: 3.20ms

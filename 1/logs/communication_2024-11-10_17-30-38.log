@@ -1,0 +1,11 @@
+[2024-11-10T17:30:38.062] [T1] Transaction started - 0.0.0.0:63457
+[2024-11-10T17:30:38.122] [T1] Packet sent - Type: DATA, Seq: 0, RTT: 42ms
+[2024-11-10T17:30:38.148] [T1] Transaction started - 127.0.0.1:63457
+[2024-11-10T17:30:38.228] [T1] Packet sent - Type: DATA, Seq: 1, RTT: 0ms
+[2024-11-10T17:30:38.337] [T1] Packet received - Type: DATA, Seq: 0
+[2024-11-10T17:30:38.342] [T1] Packet sent - Type: DATA, Seq: 0, RTT: 7ms
+[2024-11-10T17:30:38.445] [T1] Packet sent - Type: DATA, Seq: 1, RTT: 1ms
+[2024-11-10T17:30:38.553] [T1] Packet sent - Type: DATA, Seq: 0, RTT: 1ms
+[2024-11-10T17:30:38.665] [T1] Transaction completed - Client: 0.0.0.0:63457, Duration: 603ms, Packets Sent: 5, Packets Received: 5, Average RTT: 10.20ms
+[2024-11-10T17:30:39.342] [defaultTransactionId] Packet retransmitted - Type: ACK, Seq: 0
+[2024-11-10T17:30:39.343] [T1] Packet sent - Type: ACK, Seq: 0, RTT: 186ms

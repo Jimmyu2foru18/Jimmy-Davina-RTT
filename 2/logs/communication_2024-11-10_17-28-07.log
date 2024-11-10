@@ -1,0 +1,27 @@
+[2024-11-10T17:28:07.827] [T1] Transaction started - 127.0.0.1:63115
+[2024-11-10T17:28:12.763] [T1] Packet received - Type: DATA, Seq: 0
+[2024-11-10T17:28:13.783] [T1] Packet sent - Type: ACK, Seq: 0
+[2024-11-10T17:28:13.783] [defaultTransactionId] Packet retransmitted - Type: ACK, Seq: 0
+[2024-11-10T17:28:14.792] [defaultTransactionId] Packet retransmitted - Type: ACK, Seq: 0
+[2024-11-10T17:28:14.792] [T1] Packet sent - Type: ACK, Seq: 0
+[2024-11-10T17:28:23.804] [T1] Packet received - Type: DATA, Seq: 1
+[2024-11-10T17:28:24.809] [T1] Packet sent - Type: ACK, Seq: 1
+[2024-11-10T17:28:24.809] [defaultTransactionId] Packet retransmitted - Type: ACK, Seq: 1
+[2024-11-10T17:28:25.812] [defaultTransactionId] Packet retransmitted - Type: ACK, Seq: 1
+[2024-11-10T17:28:25.812] [T1] Packet sent - Type: ACK, Seq: 1
+[2024-11-10T17:28:34.825] [T1] Packet received - Type: DATA, Seq: 0
+[2024-11-10T17:28:35.827] [defaultTransactionId] Packet retransmitted - Type: ACK, Seq: 0
+[2024-11-10T17:28:35.828] [T1] Packet sent - Type: ACK, Seq: 0
+[2024-11-10T17:28:36.836] [defaultTransactionId] Packet retransmitted - Type: ACK, Seq: 0
+[2024-11-10T17:28:36.836] [T1] Packet sent - Type: ACK, Seq: 0
+[2024-11-10T17:28:45.854] [T1] Packet received - Type: DATA, Seq: 1
+[2024-11-10T17:28:46.859] [defaultTransactionId] Packet retransmitted - Type: ACK, Seq: 1
+[2024-11-10T17:28:46.859] [T1] Packet sent - Type: ACK, Seq: 1
+[2024-11-10T17:28:47.866] [T1] Packet sent - Type: ACK, Seq: 1
+[2024-11-10T17:28:47.866] [defaultTransactionId] Packet retransmitted - Type: ACK, Seq: 1
+[2024-11-10T17:28:56.884] [T1] Packet received - Type: DATA, Seq: 0
+[2024-11-10T17:28:57.901] [defaultTransactionId] Packet retransmitted - Type: ACK, Seq: 0
+[2024-11-10T17:28:57.901] [T1] Packet sent - Type: ACK, Seq: 0
+[2024-11-10T17:28:58.904] [T1] Packet sent - Type: ACK, Seq: 0
+[2024-11-10T17:28:58.904] [defaultTransactionId] Packet retransmitted - Type: ACK, Seq: 0
+[2024-11-10T17:28:58.906] [T1] Transaction completed - Client: 127.0.0.1:63115, Duration: 51079ms, Packets Sent: 10, Packets Received: 5

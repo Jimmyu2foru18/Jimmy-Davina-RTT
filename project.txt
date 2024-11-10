@@ -1,0 +1,188 @@
+Reliable Data Transfer (RDT) Protocol Implementation Project
+
+Project Overview
+This project implements a reliable data transfer protocol over UDP using Java's DatagramSockets. 
+The implementation is divided into four folders, each testing different aspects of network communication.
+
+Project Structure
+
+Folder 1: Basic Test
+Purpose: Implements basic reliable data transfer with fundamental features.
+
+Key Features:
+- Basic ACK/NACK mechanism
+- Simple packet transmission
+- RTT measurements
+- Basic error handling
+- Transaction logging
+
+Components:
+- Server.java: Main server implementation
+- Client.java: Basic client implementation
+- ServerThread.java: Handles individual client connections
+- ClientManager.java: Manages client connections
+- RDTProtocol.java: Implements reliable transfer protocol
+- Packet.java: Defines packet structure
+- CommunicationLogger.java: Handles logging
+- ClientLogger.java: Client-side logging
+
+Folder 2: Burst Test
+Purpose: Tests system's ability to handle rapid message transmission.
+
+Key Features:
+- Burst transmission (5 messages per burst)
+- Inter-burst delay (100ms between messages)
+- Burst delay (2000ms between bursts)
+- Enhanced error handling
+- Sequence number cycling
+
+Components:
+- Modified versions of Folder 1 components
+- Client2.java: Implements burst transmission
+- Enhanced ServerThread.java for burst handling
+
+Constants:
+- BURST_SIZE = 5
+- BURST_DELAY = 100ms
+- INTER_BURST_DELAY = 2000ms
+
+Folder 3: Large Packet Test
+Purpose: Tests system's ability to handle large data packets.
+
+Key Features:
+- Large packet handling (up to 64KB)
+- Size validation
+- Enhanced RTT tracking
+- Detailed packet size logging
+- Message generation for large packets
+
+Components:
+- Modified versions of Folder 1 components
+- Client3.java: Handles large packet transmission
+- Enhanced ServerThread.java with size validation
+
+Constants:
+- MAX_PACKET_SIZE = 64KB (1024 * 64)
+- MESSAGE_SIZE = 512 bytes
+- DELAY = 3000ms
+
+Folder 4: Network Simulation Test
+Purpose: Tests protocol robustness under adverse network conditions.
+
+Key Features:
+- Network condition simulation
+- Packet loss simulation
+- Packet corruption
+- Variable network delays
+- Enhanced logging for network events
+
+Components:
+- NetworkSimulator.java: Simulates network conditions
+- Client4.java: Client with network simulation
+- Enhanced logging system
+- Modified server components
+
+Network Simulation Parameters:
+- Packet Loss Rate: 10%
+- Packet Corruption Rate: 10%
+- Network Delay: 50-200ms
+
+Common Components Across Folders
+
+Packet Structure (Packet.java)
+- PacketType (DATA, ACK, NACK)
+- Sequence number
+- Data payload
+- Checksum
+- Timestamp
+
+Logging System (CommunicationLogger.java)
+Features:
+- Transaction tracking
+- Packet transmission logging
+- RTT measurements
+- Error logging
+- Network event logging
+- Performance metrics
+
+RDT Protocol (RDTProtocol.java)
+Features:
+- Reliable transmission
+- Timeout handling
+- Retransmission
+- ACK management
+- Sequence number management
+
+Server Architecture
+Components:
+- Main server
+- Client manager
+- Server threads
+- Connection handling
+- Error management
+
+Testing Scenarios
+
+Basic Test (Folder 1)
+- Single packet transmission
+- Basic reliability
+- Simple error handling
+
+Burst Test (Folder 2)
+- Multiple packets in succession
+- Burst handling
+- Flow control
+
+Large Packet Test (Folder 3)
+- Large data transmission
+- Size validation
+- Performance with large packets
+
+Network Simulation Test (Folder 4)
+- Packet loss handling
+- Corruption recovery
+- Delay management
+- Protocol robustness
+
+Metrics Tracked
+- Round Trip Time (RTT)
+- Packet loss rate
+- Transmission success rate
+- Network delays
+- Packet corruption rate
+- Transaction duration
+- Packets sent/received
+
+Logging Format
+[Timestamp] [TransactionID] Event - Details
+Example: [2024-01-01T12:00:00] [T1] Packet sent - Type: DATA, Seq: 1, Size: 1024
+
+Error Handling
+- Packet validation
+- Timeout management
+- Retransmission logic
+- Corruption detection
+- Size validation
+- Network error handling
+
+Implementation Notes
+- Java DatagramSocket for UDP communication
+- Thread-per-client architecture
+- Concurrent hash map for client management
+- Scheduled executor for timeout handling
+- Buffered writing for logging
+- Network simulation for testing
+
+Testing Guidelines
+1. Basic Test: Verify fundamental protocol operation
+2. Burst Test: Validate rapid transmission handling
+3. Large Packet Test: Confirm large data handling
+4. Network Simulation: Verify protocol robustness
+
+Performance Considerations
+- Buffer sizes
+- Timeout values
+- Retransmission limits
+- Logging overhead
+- Network simulation impact
+- Memory management
